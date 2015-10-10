@@ -19,20 +19,19 @@ else
 	SRC_URI="https://github.com/ampache/ampache/archive/${PV}.tar.gz -> ${PF}.tar.gz"
 fi
 
-SRC_URI="${SRC_URI} https://getcomposer.org/composer.phar -> ${COMPOSER}"
+SRC_URI="${SRC_URI} https://getcomposer.org/download/1.0.0-alpha10/composer.phar -> ${COMPOSER}"
 
 LICENSE="GPL-2"
 
 KEYWORDS=""
 
-IUSE="gd simplexml curl zlib ffmpeg libav"
+IUSE="gd simplexml curl zlib openid transcode"
 
 RDEPEND=">=virtual/mysql-5.0
 	>=virtual/httpd-php-5.4
 	dev-lang/php[pdo,mysql,hash,session,json,iconv,gd?,simplexml?,curl?,zlib?]
-	ffmpeg? ( media-video/ffmpeg:* )
-	libav? ( media-video/libav:* )"
-DEPEND="dev-lang/php[gmp]"
+	transcode? ( virtual/ffmpeg )
+	openid? ( dev-lang/php[gmp] )"
 
 need_httpd_cgi
 
