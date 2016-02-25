@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -19,7 +19,7 @@ else
 	SRC_URI="https://github.com/ampache/ampache/archive/${PV}.tar.gz -> ${PF}.tar.gz"
 fi
 
-SRC_URI="${SRC_URI} https://getcomposer.org/download/1.0.0-alpha10/composer.phar -> ${COMPOSER}"
+SRC_URI="${SRC_URI} https://getcomposer.org/download/1.0.0-alpha11/composer.phar -> ${COMPOSER}"
 
 LICENSE="GPL-2"
 
