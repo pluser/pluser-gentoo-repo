@@ -25,7 +25,7 @@ SRC_URI="https://github.com/arvidn/libtorrent/archive/libtorrent-${MY_PV}.tar.gz
 fi
 
 LICENSE="BSD"
-SLOT="0"
+SLOT="1.1"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE="debug doc examples python ssl static-libs test"
 
