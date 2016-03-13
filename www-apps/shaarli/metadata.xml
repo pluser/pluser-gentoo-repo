@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer>
+	<email>e_kaoru5@yahoo.co.jp</email>
+</maintainer>
+<longdescription>Shaarli is a minimalist delicious clone you can install on your own website. It is designed to be personal (single-user), fast and handy.</longdescription>
+<use>
+  <flag name='intl'>Enable tag cloud intelligent sorting (eg. e->è->f)</flag>
+  <flag name='gd'>Enable thumbnail resizing</flag>
+</use>
+</pkgmetadata>
