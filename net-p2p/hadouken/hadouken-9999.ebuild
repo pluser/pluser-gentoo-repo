@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
 inherit eutils cmake-utils git-r3
 
@@ -35,7 +35,7 @@ src_prepare() {
 	# sed -i -e 's/option(Boost_USE_STATIC_LIBS "Static linking to boost libraries" ON)/option(Boost_USE_STATIC_LIBS "Static linking to boost libraries" OFF)/g' ${CMakeLists}
 	# sed -i -e 's/option(Boost_USE_STATIC_RUNTIME "Static runtime" ON)/option(Boost_USE_STATIC_RUNTIME "Static runtime" OFF)/g' ${CMakeLists}
 	# sed -i -e 's#install(FILES ${CMAKE_SOURCE_DIR}/linux/build/bin/webui.zip DESTINATION share/hadouken)#install(FILES ${CMAKE_SOURCE_DIR}/linux/build/bin/webui.zip DESTINATION share/hadouken)#g' ${CMakeLists}
-	sed -i -e 's#return fs::path(p).parent_path();#return "/usr/share/hadouken/";#g' ${S}/src/platform_unix.cpp || die
+	sed -i -e 's#return fs::path(p).parent_path();#return "/usr/share/hadouken/";#g' "${S}/src/platform_unix.cpp" || die
 	cmake-utils_src_prepare
 }
 

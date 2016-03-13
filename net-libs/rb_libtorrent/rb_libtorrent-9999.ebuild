@@ -2,14 +2,14 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_{3,4,5} )
+PYTHON_COMPAT=( python2_7 python3_{4,5} )
 PYTHON_REQ_USE="threads"
 DISTUTILS_OPTIONAL=true
 AUTOTOOLS_AUTORECONF=true
 
-inherit autotools-utils multilib distutils-r1 versionator
+inherit multilib distutils-r1 versionator
 
 MY_PV=$(replace_all_version_separators '_' )
 S=${WORKDIR}/libtorrent-libtorrent-${MY_PV}
@@ -26,7 +26,7 @@ fi
 
 LICENSE="BSD"
 SLOT="1.1"
-KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="~amd64 ~x86"
 IUSE="debug doc examples python ssl static-libs test"
 
 REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
@@ -35,8 +35,8 @@ RDEPEND="
 	>=dev-libs/boost-1.53:=[threads]
 	sys-libs/zlib
 	examples? ( !net-p2p/mldonkey )
-	ssl? ( dev-libs/openssl:0= )
-	python? (
+	ssl? ( dev-libs/openssl:0= )"
+DUMMY="python? (
 		${PYTHON_DEPS}
 		dev-libs/boost:=[python,${PYTHON_USEDEP}]
 	)"

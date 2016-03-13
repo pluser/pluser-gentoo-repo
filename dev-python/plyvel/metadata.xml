@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+	<email>e_kaoru5@yahoo.co.jp</email>
+	<description>Kaoru Esashika</description>
+</maintainer>
+<longdescription>Plyvel is a fast and feature-rich Python interface to LevelDB.</longdescription>
+<use></use>
+</pkgmetadata>

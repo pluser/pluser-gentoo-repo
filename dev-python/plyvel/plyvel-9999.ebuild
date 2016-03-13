@@ -1,8 +1,8 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
 PYTHON_COMPAT=( python2_7 )
 
@@ -32,6 +32,6 @@ DEPEND="
 #}
 
 python_compile() {
-        make || die "Make failed."
-        distutils-r1_python_install || die "setup.py failed"
+	make || die
+	distutils-r1_python_install || die
 }
