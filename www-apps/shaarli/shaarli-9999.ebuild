@@ -45,7 +45,7 @@ src_install() {
 
 	dohtml doc/*.html doc/images/*
 	dodoc doc/*.md doc/images/* CONTRIBUTING.md
-	rm -r doc Doxyfile CONTRIBUTING.md COPYING README.md || die
+	rm Doxyfile CONTRIBUTING.md COPYING README.md || die
 
 	rm -r docker tests || die
 
