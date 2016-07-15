@@ -2,7 +2,7 @@
 <!DOCTYPE repositories SYSTEM "http://www.gentoo.org/dtd/repositories.dtd">
 <repositories xmlns="" version="1.0">
   <repo quality="experimental" status="unofficial">
-    <name>pluser-gentoo-repo</name>
+    <name>pluser-repo</name>
     <description>pluser's personal gentoo package repository.</description>
     <homepage>https://github.com/pluser/pluser-gentoo-repo</homepage>
     <owner>
